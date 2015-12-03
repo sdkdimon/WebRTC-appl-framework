@@ -56,4 +56,6 @@ function create_appl_framework () { #ARGS --> NAME LOCATION_DIR HEADER_DIR LIB_P
 load_lib
 extract
 create_appl_framework "$WEBRTC_FRAMEWORK_NAME" "$PROJECT_DIR/iOS" "$PROJECT_DIR/libjingle_peerconnection/Headers"  "$PROJECT_DIR/libjingle_peerconnection/libWebRTC.a" $WEBRTC_REVISION
+rm $PROJECT_DIR/iOS/$WEBRTC_FRAMEWORK_NAME.framework/Versions/A/Headers/RTCNSGLVideoView.h
 create_appl_framework "$WEBRTC_FRAMEWORK_NAME" "$PROJECT_DIR/OSX" "$PROJECT_DIR/libjingle_peerconnection/Headers"  "$PROJECT_DIR/libjingle_peerconnection/libWebRTC-osx.a" $WEBRTC_REVISION
+rm $PROJECT_DIR/OSX/$WEBRTC_FRAMEWORK_NAME.framework/Versions/A/Headers/RTCEAGLVideoView.h
